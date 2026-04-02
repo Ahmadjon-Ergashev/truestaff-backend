@@ -13,8 +13,11 @@ return Application::configure(basePath: dirname(__DIR__))
     )
 
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->statefulApi(); // Sanctum stateful requests helper
+        
+        // Custom rate limiting or other global middlewares can be added here
     })
+
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
