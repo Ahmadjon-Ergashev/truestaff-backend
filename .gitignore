@@ -1,0 +1,54 @@
+# Laravel
+/vendor/
+/node_modules/
+.env
+.env.*
+.env.local
+.env.*.local
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Cache
+/bootstrap/cache/
+/storage/
+
+# Runtime
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.sublime-project
+.sublime-workspace
+*.code-workspace
+
+# Composer lock (optional - uncomment if you want to share lockfile)
+# composer.lock
+
+# NPM (if using)
+package-lock.json
+yarn.lock
+
+# Environment
+.env.example
+
+# OS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Desktop.ini
+
+# PHPUnit
+phpunit.phar
+.phpunit.result.cache
+
+# Miscellaneous
+*.tmp
+*.bak
+*.orig
