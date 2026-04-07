@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
-class ApiController extends Controller
+class ApiController
 {
     // Admin Login
     public function login(Request $request) {
