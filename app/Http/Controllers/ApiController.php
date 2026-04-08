@@ -48,6 +48,10 @@ class ApiController
     }
 
     // Contact Inquiries
+    public function getInquiries() {
+        return response()->json(ContactInquiry::orderBy('created_at', 'desc')->get());
+    }
+
     public function submitInquiry(Request $request) {
         $data = $request->validate([
             'fullName' => 'required|string',
