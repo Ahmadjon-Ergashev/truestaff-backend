@@ -16,6 +16,7 @@ class WorkDomainSeeder extends Seeder
             [
                 'name_uz' => 'Savdo va Marketing',
                 'name_en' => 'Sales & Marketing',
+                'name_ru' => 'Продажи и Маркетинг',
                 'icon' => 'trending_up',
                 'image_url' => 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=3348',
                 'sort_order' => 1,
@@ -23,6 +24,7 @@ class WorkDomainSeeder extends Seeder
             [
                 'name_uz' => 'Moliya va buxgalteriya',
                 'name_en' => 'Finance & Accounting',
+                'name_ru' => 'Финансы и Бухгалтерия',
                 'icon' => 'account_balance',
                 'image_url' => 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426',
                 'sort_order' => 2,
@@ -30,6 +32,7 @@ class WorkDomainSeeder extends Seeder
             [
                 'name_uz' => 'Chakana savdo',
                 'name_en' => 'Retail',
+                'name_ru' => 'Розничная торговля',
                 'icon' => 'storefront',
                 'image_url' => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=3270',
                 'sort_order' => 3,
@@ -37,6 +40,7 @@ class WorkDomainSeeder extends Seeder
             [
                 'name_uz' => 'It va raqamli texnologiyalar',
                 'name_en' => 'IT & Digital',
+                'name_ru' => 'IT и цифровые технологии',
                 'icon' => 'developer_board',
                 'image_url' => 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=3264',
                 'sort_order' => 4,
@@ -44,6 +48,7 @@ class WorkDomainSeeder extends Seeder
             [
                 'name_uz' => 'Ishlab chiqarish',
                 'name_en' => 'Manufacturing',
+                'name_ru' => 'Производство и Логистика',
                 'icon' => 'factory',
                 'image_url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=3200',
                 'sort_order' => 5,

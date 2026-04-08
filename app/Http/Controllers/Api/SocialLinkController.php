@@ -17,7 +17,7 @@ class SocialLinkController
     {
         $validated = $request->validate([
             'platform' => 'required|string',
-            'url' => 'required|url',
+            'url' => 'required|string',
         ]);
 
         return SocialLink::create($validated);
@@ -27,7 +27,7 @@ class SocialLinkController
     {
         $validated = $request->validate([
             'platform' => 'sometimes|string',
-            'url' => 'sometimes|url',
+            'url' => 'sometimes|string',
         ]);
 
         $socialLink->update($validated);
