@@ -24,6 +24,13 @@ class WorkDomainController
             'sort_order' => 'nullable|integer',
         ]);
 
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('uploads/domains'), $filename);
+            $validated['image_url'] = '/uploads/domains/' . $filename;
+        }
+
         return WorkDomain::create($validated);
     }
 
@@ -37,6 +44,13 @@ class WorkDomainController
             'icon' => 'nullable|string',
             'sort_order' => 'nullable|integer',
         ]);
+
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('uploads/domains'), $filename);
+            $validated['image_url'] = '/uploads/domains/' . $filename;
+        }
 
         $workDomain->update($validated);
         return $workDomain;
